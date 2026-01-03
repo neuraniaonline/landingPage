@@ -443,8 +443,8 @@ export default function NeuraníaLanding() {
                   El nuevo modelo de Anthropic supera a GPT-4 en razonamiento complejo y velocidad de respuesta, marcando un antes y después en asistentes de código.
                 </p>
                 <div className="flex items-center text-cyan-400 text-sm font-semibold group-hover:translate-x-2 transition-transform">
-                  <span>Leer más</span>
-                  <ArrowRight className="w-4 h-4 ml-1" />
+                   {/*<span>Leer más</span>
+                  <ArrowRight className="w-4 h-4 ml-1" />*/}
                 </div>
               </div>
             </div>
@@ -463,14 +463,14 @@ export default function NeuraníaLanding() {
                   <span className="text-slate-500 text-xs">Hace 5 días</span>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors line-clamp-2">
-                  El 67% de las PyMEs adoptará agentes AI en 2025
+                  El 67% de las PyMEs adoptará agentes AI en 2026
                 </h3>
                 <p className="text-slate-400 text-sm leading-relaxed line-clamp-3 mb-4">
                   Según Gartner, las pequeñas empresas liderarán la automatización con IA para reducir costos operativos hasta un 40% el próximo año.
                 </p>
                 <div className="flex items-center text-blue-400 text-sm font-semibold group-hover:translate-x-2 transition-transform">
-                  <span>Leer más</span>
-                  <ArrowRight className="w-4 h-4 ml-1" />
+                   {/*<span>Leer más</span>
+                  <ArrowRight className="w-4 h-4 ml-1" />*/}
                 </div>
               </div>
             </div>
@@ -495,8 +495,8 @@ export default function NeuraníaLanding() {
                   Estudio de Stanford revela que estudiantes asistidos por IA personalizada logran mejor retención y comprensión de contenidos complejos.
                 </p>
                 <div className="flex items-center text-purple-400 text-sm font-semibold group-hover:translate-x-2 transition-transform">
-                  <span>Leer más</span>
-                  <ArrowRight className="w-4 h-4 ml-1" />
+                   {/*<span>Leer más</span>
+                  <ArrowRight className="w-4 h-4 ml-1" />*/}
                 </div>
               </div>
             </div>
@@ -513,7 +513,7 @@ export default function NeuraníaLanding() {
                   <span className="text-sm font-semibold text-green-400">Contenido exclusivo</span>
                 </div>
                 <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-                  ¿Querés más noticias de IA <span className="text-green-400">todos los días?</span>
+                  ¿Querés más noticias de IA <span className="text-green-400">todos las semanas?</span>
                 </h3>
                 <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                   Unite a nuestro canal de WhatsApp y recibí análisis exclusivos, novedades y tips sobre Inteligencia Artificial directamente en tu teléfono.
@@ -523,7 +523,7 @@ export default function NeuraníaLanding() {
                     <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
                       <CheckCircle className="w-4 h-4 text-green-400" />
                     </div>
-                    <span className="text-slate-300">Noticias diarias curadas</span>
+                    <span className="text-slate-300">Noticias semanales curadas</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
@@ -560,8 +560,8 @@ export default function NeuraníaLanding() {
                         <Sparkles className="w-5 h-5 text-green-400" />
                       </div>
                       <div>
-                        <div className="text-sm text-slate-400 mb-1">Hoy 09:30</div>
-                        <div className="text-white font-medium">OpenAI lanza GPT-5 con razonamiento avanzado...</div>
+                        <div className="text-sm text-slate-400 mb-1">02-01</div>
+                        <div className="text-white font-medium">Recomendaciones de herramientas de IA ...</div>
                       </div>
                     </div>
                     
@@ -570,8 +570,8 @@ export default function NeuraníaLanding() {
                         <TrendingUp className="w-5 h-5 text-green-400" />
                       </div>
                       <div>
-                        <div className="text-sm text-slate-400 mb-1">Ayer 14:20</div>
-                        <div className="text-white font-medium">Nuevas regulaciones de IA en la UE...</div>
+                        <div className="text-sm text-slate-400 mb-1">26-12</div>
+                        <div className="text-white font-medium">2026 Será el año de los agentes autónomos...</div>
                       </div>
                     </div>
 
@@ -580,7 +580,7 @@ export default function NeuraníaLanding() {
                         <Brain className="w-5 h-5 text-green-400" />
                       </div>
                       <div>
-                        <div className="text-sm text-slate-400 mb-1">Ayer 11:45</div>
+                        <div className="text-sm text-slate-400 mb-1">18-12</div>
                         <div className="text-white font-medium">5 prompts para aumentar productividad...</div>
                       </div>
                     </div>
