@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import { Brain, Zap, Users, TrendingUp, CheckCircle, ArrowRight, Menu, X, Sparkles, Target, Clock, DollarSign, Code, Workflow, Bot } from 'lucide-react';
+import { Brain, Zap, Users, TrendingUp, CheckCircle, ArrowRight, Menu, X, Sparkles, MessageCircle, Target, Clock, DollarSign, Code, Workflow, Bot } from 'lucide-react';
 
 export default function NeuraníaLanding() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -402,6 +402,200 @@ export default function NeuraníaLanding() {
             <span>Hablemos ahora</span>
             <ArrowRight className="w-5 h-5" />
           </a>
+        </div>
+      </section>
+
+      {/* Sección Noticias de IA */}
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-slate-950">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 px-5 py-2.5 rounded-full border border-cyan-400/30 mb-6">
+              <Sparkles className="w-5 h-5 text-cyan-400" />
+              <span className="text-sm font-medium text-cyan-400">Actualidad IA</span>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+              Últimas <span className="text-cyan-400">Noticias de IA</span>
+            </h2>
+            <p className="text-xl text-slate-400">
+              Lo más relevante del mundo de la Inteligencia Artificial
+            </p>
+          </div>
+
+          {/* Grid de Noticias */}
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Noticia 1 */}
+            <div className="group bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-slate-700/50 overflow-hidden hover:border-cyan-400/50 hover:scale-105 transition-all duration-500">
+              <div className="relative h-48 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-transparent group-hover:scale-110 transition-transform duration-500"></div>
+                <Brain className="w-16 h-16 text-cyan-400 relative z-10 group-hover:scale-110 transition-transform duration-500" />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center space-x-2 mb-3">
+                  <span className="px-3 py-1 bg-cyan-500/10 text-cyan-400 text-xs font-semibold rounded-full">
+                    Tecnología
+                  </span>
+                  <span className="text-slate-500 text-xs">Hace 2 días</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors line-clamp-2">
+                  Claude 3.5 Sonnet revoluciona el mercado de IA
+                </h3>
+                <p className="text-slate-400 text-sm leading-relaxed line-clamp-3 mb-4">
+                  El nuevo modelo de Anthropic supera a GPT-4 en razonamiento complejo y velocidad de respuesta, marcando un antes y después en asistentes de código.
+                </p>
+                <div className="flex items-center text-cyan-400 text-sm font-semibold group-hover:translate-x-2 transition-transform">
+                  <span>Leer más</span>
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </div>
+              </div>
+            </div>
+
+            {/* Noticia 2 */}
+            <div className="group bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-slate-700/50 overflow-hidden hover:border-blue-500/50 hover:scale-105 transition-all duration-500">
+              <div className="relative h-48 bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent group-hover:scale-110 transition-transform duration-500"></div>
+                <TrendingUp className="w-16 h-16 text-blue-400 relative z-10 group-hover:scale-110 transition-transform duration-500" />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center space-x-2 mb-3">
+                  <span className="px-3 py-1 bg-blue-500/10 text-blue-400 text-xs font-semibold rounded-full">
+                    Negocios
+                  </span>
+                  <span className="text-slate-500 text-xs">Hace 5 días</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors line-clamp-2">
+                  El 67% de las PyMEs adoptará agentes AI en 2025
+                </h3>
+                <p className="text-slate-400 text-sm leading-relaxed line-clamp-3 mb-4">
+                  Según Gartner, las pequeñas empresas liderarán la automatización con IA para reducir costos operativos hasta un 40% el próximo año.
+                </p>
+                <div className="flex items-center text-blue-400 text-sm font-semibold group-hover:translate-x-2 transition-transform">
+                  <span>Leer más</span>
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </div>
+              </div>
+            </div>
+
+            {/* Noticia 3 */}
+            <div className="group bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-slate-700/50 overflow-hidden hover:border-purple-500/50 hover:scale-105 transition-all duration-500">
+              <div className="relative h-48 bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent group-hover:scale-110 transition-transform duration-500"></div>
+                <Zap className="w-16 h-16 text-purple-400 relative z-10 group-hover:scale-110 transition-transform duration-500" />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center space-x-2 mb-3">
+                  <span className="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs font-semibold rounded-full">
+                    Educación
+                  </span>
+                  <span className="text-slate-500 text-xs">Hace 1 semana</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors line-clamp-2">
+                  Tutores virtuales con IA mejoran resultados en un 45%
+                </h3>
+                <p className="text-slate-400 text-sm leading-relaxed line-clamp-3 mb-4">
+                  Estudio de Stanford revela que estudiantes asistidos por IA personalizada logran mejor retención y comprensión de contenidos complejos.
+                </p>
+                <div className="flex items-center text-purple-400 text-sm font-semibold group-hover:translate-x-2 transition-transform">
+                  <span>Leer más</span>
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Canal de WhatsApp - DESTACADO */}
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-green-600/20 via-green-700/10 to-slate-900/50 border-2 border-green-500/50 p-8 md:p-12">
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-30"></div>
+            
+            <div className="relative z-10 grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="inline-flex items-center space-x-2 bg-green-500/20 px-4 py-2 rounded-full mb-4">
+                  <MessageCircle className="w-5 h-5 text-green-400" />
+                  <span className="text-sm font-semibold text-green-400">Contenido exclusivo</span>
+                </div>
+                <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+                  ¿Querés más noticias de IA <span className="text-green-400">todos los días?</span>
+                </h3>
+                <p className="text-lg text-slate-300 mb-6 leading-relaxed">
+                  Unite a nuestro canal de WhatsApp y recibí análisis exclusivos, novedades y tips sobre Inteligencia Artificial directamente en tu teléfono.
+                </p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-center space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="w-4 h-4 text-green-400" />
+                    </div>
+                    <span className="text-slate-300">Noticias diarias curadas</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="w-4 h-4 text-green-400" />
+                    </div>
+                    <span className="text-slate-300">Análisis y tendencias exclusivas</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="w-4 h-4 text-green-400" />
+                    </div>
+                    <span className="text-slate-300">Tips prácticos para tu negocio</span>
+                  </li>
+                </ul>
+                
+                <a
+                  href="https://whatsapp.com/channel/0029VbCNNyBFHWq1Ou971V3c"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50"
+                >
+                  <MessageCircle className="w-6 h-6" />
+                  <span>Unirme al canal gratis</span>
+                  <ArrowRight className="w-5 h-5" />
+                </a>
+              </div>
+
+              <div className="relative hidden md:block">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500/30 to-transparent blur-3xl"></div>
+                <div className="relative bg-slate-800/50 rounded-2xl p-8 border border-green-500/30 backdrop-blur-sm">
+                  <div className="space-y-4">
+                    <div className="flex items-start space-x-3 p-4 bg-slate-900/50 rounded-lg border border-slate-700/50">
+                      <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
+                        <Sparkles className="w-5 h-5 text-green-400" />
+                      </div>
+                      <div>
+                        <div className="text-sm text-slate-400 mb-1">Hoy 09:30</div>
+                        <div className="text-white font-medium">OpenAI lanza GPT-5 con razonamiento avanzado...</div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-3 p-4 bg-slate-900/50 rounded-lg border border-slate-700/50">
+                      <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
+                        <TrendingUp className="w-5 h-5 text-green-400" />
+                      </div>
+                      <div>
+                        <div className="text-sm text-slate-400 mb-1">Ayer 14:20</div>
+                        <div className="text-white font-medium">Nuevas regulaciones de IA en la UE...</div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-3 p-4 bg-slate-900/50 rounded-lg border border-slate-700/50">
+                      <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
+                        <Brain className="w-5 h-5 text-green-400" />
+                      </div>
+                      <div>
+                        <div className="text-sm text-slate-400 mb-1">Ayer 11:45</div>
+                        <div className="text-white font-medium">5 prompts para aumentar productividad...</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 text-center">
+                    <div className="inline-flex items-center space-x-2 text-green-400 text-sm">
+                      <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                      <span>+2.5k suscriptores activos</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

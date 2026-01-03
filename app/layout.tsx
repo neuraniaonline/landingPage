@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from './analytics'
+import { WhatsAppFloat } from './components/WhatsAppFloat'
 
 export const metadata: Metadata = {
   title: "NEURANIA - Agentes de IA para tu Negocio | Automatización Inteligente",
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   keywords: "agentes ia, gpt personalizado, automatización, inteligencia artificial, chatbot, neurania",
   openGraph: {
     title: "NEURANIA - Agentes de IA",
-    description: "Soluciones inteligentes con IA para tu negocio",
+    description: "Soluciones eficientes con IA para tu organización",
     url: "https://neurania.online",
     images: ["/og-image.png"],
   },
@@ -24,9 +25,11 @@ export default function RootLayout({
       <body 
       className="antialiased">{children}
       <Analytics />
+      <WhatsAppFloat /> 
       {children}
 
       </body>
     </html>
   );
 }
+
