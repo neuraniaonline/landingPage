@@ -36,6 +36,7 @@ export default function NeuraníaLanding() {
               <a href="#servicios" className="text-slate-300 hover:text-cyan-400 transition-all duration-300">Servicios</a>
               <a href="#como-funciona" className="text-slate-300 hover:text-cyan-400 transition-all duration-300">Cómo funciona</a>
               <a href="#casos-uso" className="text-slate-300 hover:text-cyan-400 transition-all duration-300">Casos de uso</a>
+              <a href="#noticias-ia" className="text-slate-300 hover:text-cyan-400 transition-all duration-300">Noticias de IA</a>
               <a 
                 href="https://wa.me/5492615017060?text=Hola%20NEURANIA,%20quiero%20información" 
                 target="_blank"
@@ -61,6 +62,7 @@ export default function NeuraníaLanding() {
               <a href="#servicios" className="block text-slate-300">Servicios</a>
               <a href="#como-funciona" className="block text-slate-300">Cómo funciona</a>
               <a href="#casos-uso" className="block text-slate-300">Casos de uso</a>
+              <a href="#noticias-ia" className="block text-slate-300">Noticias de IA</a>
               <a 
                 href="https://wa.me/5492611234567?text=Hola%20NEURANIA,%20quiero%20información" 
                 target="_blank"
@@ -136,8 +138,8 @@ export default function NeuraníaLanding() {
             </div>
 
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/30 to-purple-600/30 blur-3xl"></div>
-              <div className="relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl shadow-2xl p-8 border border-slate-700/50">
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/50 to-purple-600/50 blur-3xl"></div>
+              <div className="relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl shadow-2xl p-8 border border-slate-700/50">  
                 <div className="space-y-4">
                   <div className="flex items-center space-x-4 p-4 bg-slate-800/50 rounded-lg border border-slate-700/30 hover:border-cyan-400/50 transition-all duration-300 group">
                     <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center">
@@ -261,16 +263,17 @@ export default function NeuraníaLanding() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 rounded-2xl border border-slate-700/50 hover:border-cyan-400/50 transition-all duration-500">
+              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 rounded-2xl border border-slate-700/50 hover:border-cyan-400/50 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/20 to-blue-500/20 blur-3xl rounded-2xl"></div>
               <div className="w-20 h-20 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl flex items-center justify-center mb-6">
                 <Brain className="w-10 h-10 text-white" />
               </div>
               <h3 className="text-3xl font-bold text-white mb-4">Educación</h3>
-              <p className="text-slate-400 mb-6">Tutores virtuales, corrección automática y asistentes 24/7.</p>
+              <p className="text-slate-400 mb-6">Asistentes virtuales, corrección automática y tutores IA 24/7.</p>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">Tutor virtual personalizado</span>
+                  <span className="text-slate-300">Asistente virtual personalizado</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
@@ -288,19 +291,19 @@ export default function NeuraníaLanding() {
                 <TrendingUp className="w-10 h-10 text-white" />
               </div>
               <h3 className="text-3xl font-bold text-white mb-4">PyMEs</h3>
-              <p className="text-slate-400 mb-6">Atención automatizada, análisis predictivo y automatización de ventas.</p>
+              <p className="text-slate-400 mb-6">Agentes de IA, análisis predictivo y atención automatizada.</p>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">Chatbot omnicanal 24/7</span>
+                  <span className="text-slate-300">Chatbot humanizado 24/7</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">Pipeline de ventas automatizado</span>
+                  <span className="text-slate-300">Automatizaciones de procesos</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">Análisis predictivo con BI</span>
+                  <span className="text-slate-300">Dashboard simple con métricas clave</span>
                 </li>
               </ul>
             </div>
@@ -406,7 +409,7 @@ export default function NeuraníaLanding() {
       </section>
 
       {/* Sección Noticias de IA */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-slate-950">
+      <section id="noticias-ia" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-slate-950">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 px-5 py-2.5 rounded-full border border-cyan-400/30 mb-6">
