@@ -1,5 +1,3 @@
-{/* backup version noticias*/}
-
 'use client'
 
 import React, { useState, useEffect } from 'react';
