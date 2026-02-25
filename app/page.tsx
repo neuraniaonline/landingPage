@@ -1,3 +1,5 @@
+{/* backup version noticias*/}
+
 'use client'
 
 import React, { useState, useEffect } from 'react';
@@ -651,193 +653,205 @@ export default function NeuraníaLanding() {
       </section>
 
       {/* Sección Noticias de IA */}
-      <section id="noticias-ia" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-slate-950">
+      {/* Sección GPTs Personalizados */}
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-slate-950">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 px-5 py-2.5 rounded-full border border-cyan-400/30 mb-6">
+            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 px-5 py-2.5 rounded-full border border-cyan-400/30 mb-6">
               <Sparkles className="w-5 h-5 text-cyan-400" />
-              <span className="text-sm font-medium text-cyan-400">Actualidad IA</span>
+              <span className="text-sm font-medium text-cyan-400">Acceso gratuito</span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-              Últimas <span className="text-cyan-400">Noticias de IA</span>
+              Nuestros <span className="text-cyan-400">GPTs Personalizados</span>
             </h2>
             <p className="text-xl text-slate-400">
-              Lo más relevante del mundo de la Inteligencia Artificial
+              Herramientas de IA listas para usar, creadas por NEURANIA
             </p>
           </div>
 
-          {/* Grid de Noticias */}
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* Noticia 1 */}
-            <div className="group bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-slate-700/50 overflow-hidden hover:border-cyan-400/50 hover:scale-105 transition-all duration-500">
-              <div className="relative h-48 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-transparent group-hover:scale-110 transition-transform duration-500"></div>
-                <Brain className="w-16 h-16 text-cyan-400 relative z-10 group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <div className="p-6">
-                <div className="flex items-center space-x-2 mb-3">
-                  <span className="px-3 py-1 bg-cyan-500/10 text-cyan-400 text-xs font-semibold rounded-full">
-                    Tecnología
+          {/* Grid de GPTs */}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* GPT 1: Event Planner */}
+            <div className="group relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-slate-700/50 overflow-hidden hover:border-cyan-400/50 hover:scale-105 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 to-blue-500/10 blur-3xl rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <div className="relative z-10 p-8">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <Target className="w-8 h-8 text-white" />
+                  </div>
+                  <span className="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs font-semibold rounded-full">
+                    Eventos
                   </span>
-                  <span className="text-slate-500 text-xs">Hace 2 días</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors line-clamp-2">
-                  Claude 3.5 Sonnet revoluciona el mercado de IA
+
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                  GPT Event Planner
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed line-clamp-3 mb-4">
-                  El nuevo modelo de Anthropic supera a GPT-4 en razonamiento complejo y velocidad de respuesta, marcando un antes y después en asistentes de código.
+                
+                <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                  Organizador profesional de eventos el cual planifica paso a paso eventos sociales, corporativos, institucionales y culturales.
                 </p>
-                <div className="flex items-center text-cyan-400 text-sm font-semibold group-hover:translate-x-2 transition-transform">
-                   {/*<span>Leer más</span>
-                  <ArrowRight className="w-4 h-4 ml-1" />*/}
+
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-full">Bodas</span>
+                  <span className="px-3 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-full">Corporativos</span>
+                  <span className="px-3 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-full">Culturales</span>
                 </div>
+
+                <a
+                  href="https://chatgpt.com/g/g-6959c70b042481918ce856be7d69e077-gpt-event-planner"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-400/50 transition-all duration-300 group-hover:scale-105"
+                >
+                  <span>Probar gratis</span>
+                  <ArrowRight className="w-5 h-5" />
+                </a>
               </div>
             </div>
 
-            {/* Noticia 2 */}
-            <div className="group bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-slate-700/50 overflow-hidden hover:border-blue-500/50 hover:scale-105 transition-all duration-500">
-              <div className="relative h-48 bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent group-hover:scale-110 transition-transform duration-500"></div>
-                <TrendingUp className="w-16 h-16 text-blue-400 relative z-10 group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <div className="p-6">
-                <div className="flex items-center space-x-2 mb-3">
+            {/* GPT 2: Analista de Negocios */}
+            <div className="group relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-slate-700/50 overflow-hidden hover:border-blue-500/50 hover:scale-105 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-400/10 to-purple-500/10 blur-3xl rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <div className="relative z-10 p-8">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <TrendingUp className="w-8 h-8 text-white" />
+                  </div>
                   <span className="px-3 py-1 bg-blue-500/10 text-blue-400 text-xs font-semibold rounded-full">
                     Negocios
                   </span>
-                  <span className="text-slate-500 text-xs">Hace 5 días</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors line-clamp-2">
-                  El 67% de las PyMEs adoptará agentes AI en 2026
+
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                  GPT Analista de Negocios
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed line-clamp-3 mb-4">
-                  Según Gartner, las pequeñas empresas liderarán la automatización con IA para reducir costos operativos hasta un 40% el próximo año.
+                
+                <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                  Evalúa ideas de negocio con Business Model Canvas. Análisis estructurado puntuado (0-100) con plan de 7 días. Listo para presentar.
                 </p>
-                <div className="flex items-center text-blue-400 text-sm font-semibold group-hover:translate-x-2 transition-transform">
-                   {/*<span>Leer más</span>
-                  <ArrowRight className="w-4 h-4 ml-1" />*/}
+
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-full">BMC</span>
+                  <span className="px-3 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-full">Validación</span>
+                  <span className="px-3 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-full">Reportes</span>
                 </div>
+
+                <a
+                  href="https://chatgpt.com/g/g-68cf15756ee08191a58fc60c148e13ae-gpt-analista-de-negocios-neurania-2025"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-105"
+                >
+                  <span>Probar gratis</span>
+                  <ArrowRight className="w-5 h-5" />
+                </a>
               </div>
             </div>
 
-            {/* Noticia 3 */}
-            <div className="group bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-slate-700/50 overflow-hidden hover:border-purple-500/50 hover:scale-105 transition-all duration-500">
-              <div className="relative h-48 bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent group-hover:scale-110 transition-transform duration-500"></div>
-                <Zap className="w-16 h-16 text-purple-400 relative z-10 group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <div className="p-6">
-                <div className="flex items-center space-x-2 mb-3">
+            {/* GPT 3: Administrador de Gastos */}
+            <div className="group relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-slate-700/50 overflow-hidden hover:border-purple-500/50 hover:scale-105 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-400/10 to-pink-500/10 blur-3xl rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <div className="relative z-10 p-8">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <DollarSign className="w-8 h-8 text-white" />
+                  </div>
                   <span className="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs font-semibold rounded-full">
+                    Finanzas
+                  </span>
+                </div>
+
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
+                  GPT Administrador de Gastos
+                </h3>
+                
+                <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                  Ayuda a profesionales y PyMEs a registrar, organizar y analizar gastos administrativos de manera simple y eficiente. Control financiero inteligente sin complicaciones.
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-full">Tracking</span>
+                  <span className="px-3 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-full">Reportes</span>
+                  <span className="px-3 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-full">PyMEs</span>
+                </div>
+
+                <a
+                  href="https://chatgpt.com/g/g-68cf5224e57c819180144288496fe107-gpt-administrador-de-gastos-neurania-2025"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 group-hover:scale-105"
+                >
+                  <span>Probar gratis</span>
+                  <ArrowRight className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
+
+            {/* GPT 4: Educativo */}
+            <div className="group relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-slate-700/50 overflow-hidden hover:border-green-500/50 hover:scale-105 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-400/10 to-emerald-500/10 blur-3xl rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <div className="relative z-10 p-8">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <Brain className="w-8 h-8 text-white" />
+                  </div>
+                  <span className="px-3 py-1 bg-green-500/10 text-green-400 text-xs font-semibold rounded-full">
                     Educación
                   </span>
-                  <span className="text-slate-500 text-xs">Hace 1 semana</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors line-clamp-2">
-                  Tutores virtuales con IA mejoran resultados en un 45%
+
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
+                  GPT Educativo Standard
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed line-clamp-3 mb-4">
-                  Estudio de Stanford revela que estudiantes asistidos por IA personalizada logran mejor retención y comprensión de contenidos complejos.
+                
+                <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                  Asistente educativo especializado en ayudar a docentes a planificar clases, diseñar evaluaciones y crear actividades con innovadoras, atractivas y pedagógicas. Ahorrá horas de preparación.
                 </p>
-                <div className="flex items-center text-purple-400 text-sm font-semibold group-hover:translate-x-2 transition-transform">
-                   {/*<span>Leer más</span>
-                  <ArrowRight className="w-4 h-4 ml-1" />*/}
+
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-full">Planificación</span>
+                  <span className="px-3 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-full">Evaluaciones</span>
+                  <span className="px-3 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-full">Robótica</span>
                 </div>
+
+                <a
+                  href="https://chatgpt.com/g/g-68cf32b34fd481919b60f542be45ff86-gpt-educativo-neurania-standard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-green-500/50 transition-all duration-300 group-hover:scale-105"
+                >
+                  <span>Probar gratis</span>
+                  <ArrowRight className="w-5 h-5" />
+                </a>
               </div>
             </div>
           </div>
 
-          {/* CTA Canal de WhatsApp - DESTACADO */}
-          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-green-600/20 via-green-700/10 to-slate-900/50 border-2 border-green-500/50 p-8 md:p-12">
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-30"></div>
-            
-            <div className="relative z-10 grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <div className="inline-flex items-center space-x-2 bg-green-500/20 px-4 py-2 rounded-full mb-4">
-                  <MessageCircle className="w-5 h-5 text-green-400" />
-                  <span className="text-sm font-semibold text-green-400">Contenido exclusivo</span>
-                </div>
-                <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-                  ¿Querés más noticias de IA <span className="text-green-400">todos las semanas?</span>
-                </h3>
-                <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                  Unite a nuestro canal de WhatsApp y recibí análisis exclusivos, novedades y tips sobre Inteligencia Artificial directamente en tu teléfono.
-                </p>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center space-x-3">
-                    <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="w-4 h-4 text-green-400" />
-                    </div>
-                    <span className="text-slate-300">Noticias semanales curadas</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="w-4 h-4 text-green-400" />
-                    </div>
-                    <span className="text-slate-300">Análisis y tendencias exclusivas</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="w-4 h-4 text-green-400" />
-                    </div>
-                    <span className="text-slate-300">Tips prácticos para tu negocio</span>
-                  </li>
-                </ul>
-                
-                <a
-                  href="https://whatsapp.com/channel/0029VbCNNyBFHWq1Ou971V3c"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50"
-                >
-                  <MessageCircle className="w-6 h-6" />
-                  <span>Unirme al canal gratis</span>
-                  <ArrowRight className="w-5 h-5" />
-                </a>
-              </div>
-
-              <div className="relative hidden md:block">
-                <div className="absolute inset-0 bg-gradient-to-br from-green-500/30 to-transparent blur-3xl"></div>
-                <div className="relative bg-slate-800/50 rounded-2xl p-8 border border-green-500/30 backdrop-blur-sm">
-                  <div className="space-y-4">
-                    <div className="flex items-start space-x-3 p-4 bg-slate-900/50 rounded-lg border border-slate-700/50">
-                      <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                        <Sparkles className="w-5 h-5 text-green-400" />
-                      </div>
-                      <div>
-                        <div className="text-sm text-slate-400 mb-1">02-01</div>
-                        <div className="text-white font-medium">Recomendaciones de herramientas de IA ...</div>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start space-x-3 p-4 bg-slate-900/50 rounded-lg border border-slate-700/50">
-                      <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                        <TrendingUp className="w-5 h-5 text-green-400" />
-                      </div>
-                      <div>
-                        <div className="text-sm text-slate-400 mb-1">26-12</div>
-                        <div className="text-white font-medium">2026 Será el año de los agentes autónomos...</div>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start space-x-3 p-4 bg-slate-900/50 rounded-lg border border-slate-700/50">
-                      <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                        <Brain className="w-5 h-5 text-green-400" />
-                      </div>
-                      <div>
-                        <div className="text-sm text-slate-400 mb-1">18-12</div>
-                        <div className="text-white font-medium">5 prompts para aumentar productividad...</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="mt-6 text-center">
-                    <div className="inline-flex items-center space-x-2 text-green-400 text-sm">
-                      <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>                      
-                    </div>
-                  </div>
-                </div>
-              </div>
+          {/* CTA Canal WhatsApp - Compacto */}
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-green-600/20 via-green-700/10 to-slate-900/50 border-2 border-green-500/50 p-8">
+            <div className="relative z-10 text-center">
+              <MessageCircle className="w-12 h-12 text-green-400 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold text-white mb-3">
+                ¿Querés más contenido sobre IA?
+              </h3>
+              <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
+                Unite a nuestro canal de WhatsApp con noticias diarias, análisis y tips sobre Inteligencia Artificial
+              </p>
+              <a
+                href="https://whatsapp.com/channel/0029VbCNNyBFHWq1Ou971V3c"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50"
+              >
+                <MessageCircle className="w-6 h-6" />
+                <span>Unirme gratis</span>
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>
