@@ -403,12 +403,12 @@ export default function NeuraníaLanding() {
                   </div>
                 </div>
 
-                <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700/50">
+                {/*<div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700/50">
                   <p className="text-slate-300 text-sm italic">
                     "Recuperé mi vida. Ahora puedo enfocarme en mis estudiantes en lugar de estar horas creando material"
                   </p>
                   <p className="text-cyan-400 text-xs mt-2 font-semibold">— Docente usuario</p>
-                </div>
+                </div>*/}
 
                 <div className="mt-6 inline-flex items-center text-cyan-400 text-sm font-semibold">
                   <span className="px-3 py-1 bg-green-500/20 text-green-400 rounded-full">
@@ -437,7 +437,7 @@ export default function NeuraníaLanding() {
                 </h3>
                 
                 <p className="text-slate-400 mb-6 leading-relaxed">
-                  Coordinadora profesional gestionando <strong className="text-white">3x más eventos</strong> simultáneamente sin estrés ni olvidos.
+                  Coordinadora profesional gestionando <strong className="text-white">eficientemente cada evento</strong> sin estrés ni olvidos.
                 </p>
 
                 <div className="space-y-3 mb-6">
@@ -455,12 +455,12 @@ export default function NeuraníaLanding() {
                   </div>
                 </div>
 
-                <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700/50">
+                {/*<div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700/50">
                   <p className="text-slate-300 text-sm italic">
                     "Pasé de tener todo en papelitos y Excel a tener un asistente profesional. Ahora puedo atender el triple de clientes sin estrés"
                   </p>
                   <p className="text-purple-400 text-xs mt-2 font-semibold">— Coordinadora de eventos</p>
-                </div>
+                </div>*/}
 
                 <div className="mt-6 inline-flex items-center text-purple-400 text-sm font-semibold">
                   <span className="px-3 py-1 bg-green-500/20 text-green-400 rounded-full">
@@ -489,7 +489,7 @@ export default function NeuraníaLanding() {
                 </h3>
                 
                 <p className="text-slate-400 mb-6 leading-relaxed">
-                  Institución educativa liberando <strong className="text-white">12 horas semanales</strong> del equipo administrativo con atención automatizada.
+                  Institución de Educación Superior <strong className="text-white">12 horas semanales</strong> del equipo administrativo con atención automatizada.
                 </p>
 
                 <div className="space-y-3 mb-6">
@@ -499,19 +499,19 @@ export default function NeuraníaLanding() {
                   </div>
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300 text-sm">Disponibilidad 24/7 para padres y estudiantes</span>
+                    <span className="text-slate-300 text-sm">Disponibilidad 24/7 para estudiantes y aspirantes a las distintas ofertas académicas</span>
                   </div>
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300 text-sm">Reducción del 60% en llamadas telefónicas</span>
+                    <span className="text-slate-300 text-sm">Reducción del 40% pidiendo información de las carreras</span>
                   </div>
                 </div>
 
-                <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700/50">
+                {/*<div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700/50">
                   <p className="text-slate-300 text-sm">
                     Mejora notable en satisfacción de usuarios según encuestas institucionales. Derivación inteligente de casos complejos.
                   </p>
-                </div>
+                </div>*/}
 
                 <div className="mt-6 inline-flex items-center text-blue-400 text-sm font-semibold">
                   <span className="px-3 py-1 bg-green-500/20 text-green-400 rounded-full">
@@ -558,11 +558,11 @@ export default function NeuraníaLanding() {
                   </div>
                 </div>
 
-                <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700/50">
+                {/*<div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700/50">
                   <p className="text-slate-300 text-sm">
                     Todas las funcionalidades enterprise con costos accesibles. Respuestas contextuales con memoria de conversación.
                   </p>
-                </div>
+                </div>*/}
 
                 <div className="mt-6 inline-flex items-center text-green-400 text-sm font-semibold">
                   <span className="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full">
