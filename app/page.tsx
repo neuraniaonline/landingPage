@@ -248,7 +248,7 @@ export default function NeuraníaLanding() {
                 <Code className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Integraciones</h3>
-              <p className="text-slate-400 text-sm">Conectamos con todas tus herramientas</p>
+              <p className="text-slate-400 text-sm">Conectamos con tus herramientas</p>
             </div>
           </div>
         </div>
@@ -346,6 +346,248 @@ export default function NeuraníaLanding() {
               <h3 className="text-xl font-bold text-white mb-2">Optimizamos</h3>
               <p className="text-slate-400 text-sm">Mejora continua basada en resultados</p>
             </div>
+          </div>
+        </div>
+      </section>
+                  {/* Casos de Éxito */}
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 px-5 py-2.5 rounded-full border border-cyan-400/30 mb-6">
+              <CheckCircle className="w-5 h-5 text-cyan-400" />
+              <span className="text-sm font-medium text-cyan-400">Resultados reales</span>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+              Casos de <span className="text-cyan-400">Éxito</span>
+            </h2>
+            <p className="text-xl text-slate-400">
+              Soluciones implementadas con resultados medibles
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Caso 1: GPT Educativo */}
+            <div className="relative group bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-slate-700/50 hover:border-cyan-400/50 transition-all duration-500 p-8">
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 to-blue-500/10 blur-3xl rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <div className="relative z-10">
+                <div className="flex items-start justify-between mb-6">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center">
+                    <Brain className="w-7 h-7 text-white" />
+                  </div>
+                  <span className="px-3 py-1 bg-cyan-500/10 text-cyan-400 text-xs font-semibold rounded-full">
+                    Educación
+                  </span>
+                </div>
+
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                  GPT Creador de Clases Personalizadas
+                </h3>
+                
+                <p className="text-slate-400 mb-6 leading-relaxed">
+                  Docentes reduciendo de <strong className="text-white">5 horas a 15 minutos</strong> la preparación de clases adaptadas a diferentes niveles de estudiantes.
+                </p>
+
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">Ahorro de <strong className="text-white">20 horas mensuales</strong> por docente</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">Contenido 100% personalizado a cada metodología</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">Generación automática de ejercicios y evaluaciones</span>
+                  </div>
+                </div>
+
+                <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700/50">
+                  <p className="text-slate-300 text-sm italic">
+                    "Recuperé mi vida. Ahora puedo enfocarme en mis estudiantes en lugar de estar horas creando material"
+                  </p>
+                  <p className="text-cyan-400 text-xs mt-2 font-semibold">— Docente usuario</p>
+                </div>
+
+                <div className="mt-6 inline-flex items-center text-cyan-400 text-sm font-semibold">
+                  <span className="px-3 py-1 bg-green-500/20 text-green-400 rounded-full">
+                    💰 Costo: GRATIS
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Caso 2: Event Planner */}
+            <div className="relative group bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-slate-700/50 hover:border-purple-500/50 transition-all duration-500 p-8">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-400/10 to-pink-500/10 blur-3xl rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <div className="relative z-10">
+                <div className="flex items-start justify-between mb-6">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                    <Target className="w-7 h-7 text-white" />
+                  </div>
+                  <span className="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs font-semibold rounded-full">
+                    PyME
+                  </span>
+                </div>
+
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
+                  GPT Event Planner - Organizador de Eventos
+                </h3>
+                
+                <p className="text-slate-400 mb-6 leading-relaxed">
+                  Coordinadora profesional gestionando <strong className="text-white">3x más eventos</strong> simultáneamente sin estrés ni olvidos.
+                </p>
+
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">Reducción del <strong className="text-white">70% en tiempo de planificación</strong></span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">Cero eventos con detalles olvidados</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">Gestión automática de proveedores y cronogramas</span>
+                  </div>
+                </div>
+
+                <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700/50">
+                  <p className="text-slate-300 text-sm italic">
+                    "Pasé de tener todo en papelitos y Excel a tener un asistente profesional. Ahora puedo atender el triple de clientes sin estrés"
+                  </p>
+                  <p className="text-purple-400 text-xs mt-2 font-semibold">— Coordinadora de eventos</p>
+                </div>
+
+                <div className="mt-6 inline-flex items-center text-purple-400 text-sm font-semibold">
+                  <span className="px-3 py-1 bg-green-500/20 text-green-400 rounded-full">
+                    💰 Costo: GRATIS
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Caso 3: Chatbot Web */}
+            <div className="relative group bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-500 p-8">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-400/10 to-cyan-500/10 blur-3xl rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <div className="relative z-10">
+                <div className="flex items-start justify-between mb-6">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
+                    <Bot className="w-7 h-7 text-white" />
+                  </div>
+                  <span className="px-3 py-1 bg-blue-500/10 text-blue-400 text-xs font-semibold rounded-full">
+                    Educación
+                  </span>
+                </div>
+
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                  Chatbot Web Institucional 24/7
+                </h3>
+                
+                <p className="text-slate-400 mb-6 leading-relaxed">
+                  Institución educativa liberando <strong className="text-white">12 horas semanales</strong> del equipo administrativo con atención automatizada.
+                </p>
+
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm"><strong className="text-white">85% de consultas básicas</strong> resueltas automáticamente</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">Disponibilidad 24/7 para padres y estudiantes</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">Reducción del 60% en llamadas telefónicas</span>
+                  </div>
+                </div>
+
+                <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700/50">
+                  <p className="text-slate-300 text-sm">
+                    Mejora notable en satisfacción de usuarios según encuestas institucionales. Derivación inteligente de casos complejos.
+                  </p>
+                </div>
+
+                <div className="mt-6 inline-flex items-center text-blue-400 text-sm font-semibold">
+                  <span className="px-3 py-1 bg-green-500/20 text-green-400 rounded-full">
+                    💰 Costo: GRATIS
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Caso 4: Demo Chatbot VPS */}
+            <div className="relative group bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-slate-700/50 hover:border-green-500/50 transition-all duration-500 p-8">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-400/10 to-emerald-500/10 blur-3xl rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <div className="relative z-10">
+                <div className="flex items-start justify-between mb-6">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center">
+                    <Workflow className="w-7 h-7 text-white" />
+                  </div>
+                  <span className="px-3 py-1 bg-green-500/10 text-green-400 text-xs font-semibold rounded-full">
+                    Educación
+                  </span>
+                </div>
+
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
+                  Demo Chatbot VPS Profesional
+                </h3>
+                
+                <p className="text-slate-400 mb-6 leading-relaxed">
+                  Demo funcional enterprise con <strong className="text-white">inversión mínima</strong> como alternativa a plataformas caras del mercado.
+                </p>
+
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">Integración completa con base de datos institucional</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">Personalidad alineada a valores institucionales</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">Escalable a múltiples canales (Web, WhatsApp, Telegram)</span>
+                  </div>
+                </div>
+
+                <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700/50">
+                  <p className="text-slate-300 text-sm">
+                    Todas las funcionalidades enterprise con costos accesibles. Respuestas contextuales con memoria de conversación.
+                  </p>
+                </div>
+
+                <div className="mt-6 inline-flex items-center text-green-400 text-sm font-semibold">
+                  <span className="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full">
+                    💰 VPS $5/mes + API
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA después de casos */}
+          <div className="mt-16 text-center">
+            <p className="text-slate-400 text-lg mb-6">
+              ¿Querés resultados similares para tu negocio o institución?
+            </p>
+            
+            <a
+              href="https://wa.me/5492611234567?text=Hola%20NEURANIA,%20quiero%20conocer%20más%20casos%20de%20éxito"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
+            >
+              <span>Hablemos de tu proyecto</span>
+              <ArrowRight className="w-5 h-5" />
+            </a>
           </div>
         </div>
       </section>
@@ -591,8 +833,7 @@ export default function NeuraníaLanding() {
 
                   <div className="mt-6 text-center">
                     <div className="inline-flex items-center space-x-2 text-green-400 text-sm">
-                      <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                      <span>+2.5k suscriptores activos</span>
+                      <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>                      
                     </div>
                   </div>
                 </div>
@@ -638,7 +879,7 @@ export default function NeuraníaLanding() {
             <div>
               <h4 className="font-bold mb-4">Contacto</h4>
               <ul className="space-y-2 text-slate-400 text-sm">
-                <li>neuraniaonline@gmail.com</li>
+                <li>aps@neurania.online</li>
                 <li>Mendoza, Argentina</li>
               </ul>
             </div>
@@ -647,7 +888,7 @@ export default function NeuraníaLanding() {
           <div className="border-t border-slate-800 pt-8 pb-4">
             <div className="flex flex-wrap justify-center items-center gap-6">
               <a 
-                href="mailto:neuraniaonline@gmail.com"
+                href="mailto:aps@neurania.online"
                 className="text-slate-400 hover:text-orange-400 transition-colors flex items-center space-x-2"
                 aria-label="Email"
               >
@@ -739,7 +980,7 @@ export default function NeuraníaLanding() {
           </div>
 
           <div className="border-t border-slate-800 pt-8 text-center text-slate-400 text-sm">
-            <p>© 2024 NEURANIA. Todos los derechos reservados.</p>
+            <p>© 2026 NEURANIA. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
